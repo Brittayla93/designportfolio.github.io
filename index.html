@@ -8,12 +8,13 @@
         <meta name="viewport" content="width=device-width">
 		<!-- Load Css -->
 		<link rel="stylesheet" type="text/css" href="assets/css/cssloader.css" />
+		<link rel="stylesheet" type="text/css" href="assets/css/grid.css" />
 		<!-- Main Style -->
 		<link rel="stylesheet" type="text/css" href="main.css" />
 
 	</head>
 <body>
-
+	
 	<table class="doc-loader">
 	  <tr>
 		<td>
@@ -41,7 +42,7 @@
 			</div> <!-- End windows8 -->
 		</td>
 	  </tr>
-	</table>
+	</table>	
 	
 <nav>
 	<!-- ==================== Navbar ==================== -->
@@ -58,8 +59,8 @@
 				<ul class="nav pull-right">
 					<li class="dropdown"><a href="#">Home</a>
 						<ul class="dropdown-menu">
-							<li class="active"><a href="index.html">Home 1</a></li>
-							<li><a href="index2.html">Home 2</a></li>
+							<li><a href="index.html">Home 1</a></li>
+							<li class="active"><a href="index.html">Home 2</a></li>
 							<li><a href="index3.html">Home 3</a></li>
 						</ul>
 					</li>
@@ -125,81 +126,177 @@
 	<!-- ==================== /Navbar ==================== -->
 </nav>	
 <section id="slide">
-	<div class="fluid_container">
-        <div class="camera_wrap camera_emboss pattern_1" id="camera_wrap_4">
-			<div data-src="assets/images/slides/bg2.png">
-				<div class="camera_caption fadeFromLeft">
-					<div class="container">
-					<div class="row-fluid">
-						<div class="span4 offset1">
-							<h1>Fully Responsive & Retina Ready</h1>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce elementum, nulla vel pellentesque consequat, ante nulla hendrerit arcu</p>
-							<a href="#" class="button_regular">Purchase Now !</a>
-						</div>
-						<div class="span4 offset1 hidden-phone">
-							<img class="mobile" src="assets/images/slides/mobile.png">
-						</div>
-					</div>
+	<div id="myCarousel" class="carousel slide">
+		<div class="carousel-inner">
+			<div class="active item">
+				<div class="fillbg1">
+					<div id="featuress" class="parallax">
+						<div id="features" class="parallax-bg" style="background-position: 50% -33px; background:url('assets/images/slides/1.jpg');background-attachment: fixed;background-size: cover;"></div><!-- END PARALLAX BACKGROUND -->
+						<div class="overlay"></div><!-- END PATTERN OVERLAY -->
+						<div class="container clearfix">
+							<div class="parallax-content">
+								<div class="row-fluid margin">
+									<div class="span12">
+										<h1>We Have What Your Looking For</h1>
+										<h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</h4>
+										<a href="#" class="button_regular">Purchase Now !</a>
+									</div>
+								</div>
+							</div><!-- END PARALLAX CONTENT -->
+						</div><!-- END CONTAINER -->
 					</div>
 				</div>
 			</div>
-			<div data-src="assets/images/slides/bg1.png">
-				<div class="camera_caption fadeFromBottom">
-					<div class="container text-center">
-						<h1>We Have What Your Looking For</h1>
-						<h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</h4>
-						<a href="#" class="button_regular">Purchase Now !</a>
+			
+			<div class="item">
+				<div class="fillbg2">
+					<div id="featuress" class="parallax">
+						<div id="features-2" class="parallax-bg" style="background-position: 50% -33px; background:url('assets/images/slides/3.jpg');background-attachment: fixed;background-size: cover;"></div><!-- END PARALLAX BACKGROUND -->
+						<div class="overlay"></div><!-- END PATTERN OVERLAY -->
+						<div class="container clearfix">
+							<div class="parallax-content">
+								<div class="row-fluid margin">
+									<div class="span12">
+										<h1>We Have What Your Looking For</h1>
+										<h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</h4>
+										<a href="#" class="button_regular">Purchase Now !</a>
+									</div>
+								</div>
+							</div><!-- END PARALLAX CONTENT -->
+						</div><!-- END CONTAINER -->
 					</div>
-                </div>
+				</div>
 			</div>
+			
 		</div>
+	
+	<!-- Carousel nav -->
+	  <a class="carousel-control left" href="#myCarousel" data-slide="prev"></a>
+	  <a class="carousel-control right" href="#myCarousel" data-slide="next"></a>
 	</div>
 </section>
 
 <section id="content">
-	<div class="container">
-		<div class="slogan text-center from-top">
-			<h2 class="color-2">Lorem ipsum dolor sit amet - consectetur adipiscing elit</h2>
-			<p class="descrip">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce elementum, nulla vel pellentesque consequat, ante nulla hendrerit arcu, ac tincidunt mauris lacus sed leo. vamus suscipit molestie vestibulum</p>
+	<div class="purchase text-center">
+		<div class="container">
+			<h3 class="fade-in">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt</h3>
+			<a href="#" class="button_regular from-top">Purchase Now</a>
 		</div>
-		<ul class="get-purchase fade-in">
-			<li><a href="#">Discover Now !</a></li>
-			<li><a href="#">Purchase Now !</a></li>
-		</ul>
-		
-		<div class="row-fluid">
-			<div class="span4 feature-box from-bottom">
-				<div class="box-content">
-					<i class="fa fa-lightbulb-o feature-icon"></i>
-					<h3>Ideas</h3>
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce elementum, nulla vel pellentesque consequat, ante nulla hendrerit arcu, ac tincidunt mauris lacus sed leo. vamus suscipit molestie vestibulum</p>
-					<a href="#" class="read">Read More !</a>
+	</div>
+	<div class="container">
+		<div class="row-fluid">			
+			<div class="span4 feat1 fade-in">
+                <div class="circle-1">
+					<i class="fa fa-lightbulb-o icon"></i>
 				</div>
+				<h3>Smart and Flexible</h3>
+				<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been</p>
+                <hr>
+                <a href="#" class="color-2">Read more !</a>	
+            </div>
+			
+			<div class="span4 feat1 fade-in">
+				<div class="circle-1">
+					<i class="fa fa-globe icon"></i>
+				</div>
+				<h3>Modern Design</h3>
+				<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been</p>
+				<hr>
+				<a href="#" class="color-2">Read More !</a>
 			</div>
 			
-			<div class="span4 feature-box from-bottom">
-				<div class="box-content">
-					<i class="fa fa-cogs feature-icon"></i>
-					<h3>Develop</h3>
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce elementum, nulla vel pellentesque consequat, ante nulla hendrerit arcu, ac tincidunt mauris lacus sed leo. vamus suscipit molestie vestibulum</p>
-					<a href="#" class="read">Read More !</a>
+			<div class="span4 feat1 fade-in">
+				<div class="circle-1">
+					<i class="fa fa-mobile-phone icon"></i>
 				</div>
-			</div>
-			<div class="span4 feature-box from-bottom">
-				<div class="box-content">
-					<i class="fa fa-flask feature-icon"></i>
-					<h3>Debug</h3>
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce elementum, nulla vel pellentesque consequat, ante nulla hendrerit arcu, ac tincidunt mauris lacus sed leo. vamus suscipit molestie vestibulum</p>
-					<a href="#" class="read">Read More !</a>
-				</div>
+				<h3>Responsive Design</h3>
+				<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been</p>
+				<hr>
+				<a href="#" class="color-2">Read More !</a>
 			</div>
 		</div>
 	</div>
 </section>
 
-<section id="work">
+<section id="content" class="padding-min">
 	<div class="container">
-		<div class="title from-bottom">
+		<div class="title from-top">
+			<h2>About Us</h2>
+			<div class="bullerBr"> 
+				<span>&nbsp;</span> 
+				<i class="fa fa-circle"></i>
+				<label class="smlwidth">&nbsp;</label>
+			</div>
+			<p class="descrip">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce elementum, nulla vel pellentesque consequat, ante nulla hendrerit arcu, ac tincidunt mauris lacus sed leo</p>
+		</div>
+		
+		<div class="row-fluid">
+			<div class="span6 fade-in">
+				<div class="span2 text-center">
+					<i class="fa fa-money about-icon"></i>
+				</div>
+				<div class="span10">
+					<h3>One time fee</h3>
+					<p>Vestibulum volutpat, lacus a ultrices sagittis, mi neque euismod dui, eu pulvinar nunc sapien ornare nisl. Phasellus pede arcu, dapibus eu ped, fermentum et, dapibus sed, urna.</p>
+				</div>
+			</div> <!-- End Span6 -->
+			<div class="span6 fade-in">
+				<div class="span2 text-center">
+					<i class="fa fa-code about-icon"></i>
+				</div>
+				<div class="span10">
+					<h3>100% Source Code</h3>
+					<p>Vestibulum volutpat, lacus a ultrices sagittis, mi neque euismod dui, eu pulvinar nunc sapien ornare nisl. Phasellus pede arcu, dapibus eu ped, fermentum et, dapibus sed, urna.</p>
+				</div>
+			</div> <!-- End Span6 -->
+		</div>
+		
+		<div class="row-fluid">
+			<div class="span6 fade-in">
+				<div class="span2 text-center">
+					<i class="fa fa-qrcode about-icon"></i>
+				</div>
+				<div class="span10">
+					<h3>Multiple Colors</h3>
+					<p>Vestibulum volutpat, lacus a ultrices sagittis, mi neque euismod dui, eu pulvinar nunc sapien ornare nisl. Phasellus pede arcu, dapibus eu ped, fermentum et, dapibus sed, urna.</p>
+				</div>
+			</div> <!-- End Span6 -->
+			<div class="span6 fade-in">
+				<div class="span2 text-center">
+					<i class="fa fa-smile-o about-icon"></i>
+				</div>
+				<div class="span10">
+					<h3>Social e-commerce</h3>
+					<p>Vestibulum volutpat, lacus a ultrices sagittis, mi neque euismod dui, eu pulvinar nunc sapien ornare nisl. Phasellus pede arcu, dapibus eu ped, fermentum et, dapibus sed, urna.</p>
+				</div>
+			</div> <!-- End Span6 -->
+		</div>
+		
+		<div class="row-fluid">
+			<div class="span6 fade-in">
+				<div class="span2 text-center">
+					<i class="fa fa-video-camera about-icon"></i>
+				</div>
+				<div class="span10">
+					<h3>Lorem Ipsum</h3>
+					<p>Vestibulum volutpat, lacus a ultrices sagittis, mi neque euismod dui, eu pulvinar nunc sapien ornare nisl. Phasellus pede arcu, dapibus eu ped, fermentum et, dapibus sed, urna.</p>
+				</div>
+			</div> <!-- End Span6 -->
+			<div class="span6 fade-in">
+				<div class="span2 text-center">
+					<i class="fa fa-camera-retro about-icon"></i>
+				</div>
+				<div class="span10">
+					<h3>Lorem Ipsum</h3>
+					<p>Vestibulum volutpat, lacus a ultrices sagittis, mi neque euismod dui, eu pulvinar nunc sapien ornare nisl. Phasellus pede arcu, dapibus eu ped, fermentum et, dapibus sed, urna.</p>
+				</div>
+			</div> <!-- End Span6 -->
+		</div>
+	</div>
+</section>
+<section id="content" class="no-padding-bottom">
+	<div class="container">
+		<div class="title from-top">
 			<h2>Our Works</h2>
 			<div class="bullerBr"> 
 				<span>&nbsp;</span> 
@@ -208,237 +305,112 @@
 			</div>
 			<p class="descrip">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce elementum, nulla vel pellentesque consequat, ante nulla hendrerit arcu, ac tincidunt mauris lacus sed leo. vamus suscipit molestie vestibulum.</p>
 		</div>
-	</div>
-	
-	<div class="container">
-		<div class="flexslider">
-			<ul class="slides">
-				<li>
-				<div class="row">
-					<ul class="work">
-						<!-- 1 -->
-						<li class="span4 from-bottom">
-							<div class="hoveritem">
-								<div class="link">
-									<div class="hovercontent">
-										<ul class="caption"> 
-											<li><a href="http://placehold.it/640x480&text=1" class="icons fa fa-search" rel="prettyPhoto" title="Project Name"></a></li>
-											<li><a href="single-portfolio.html" class="icons fa fa-link"></a></li>
-										</ul>
-									</div>
-								<img src="http://placehold.it/640x480&text=1"/>
-								</div>
-							</div>
-						<div class="post">	
-							<p>Nam sed enim molestie</p>
-						</div>
-						</li>
-						<!-- 2 -->
-						<li class="span4 from-bottom">
-							<div class="hoveritem">
-								<div class="link">
-									<div class="hovercontent">
-										<ul class="caption"> 
-											<li><a href="http://placehold.it/640x480&text=2" class="icons fa fa-search" rel="prettyPhoto" title="Project Name"></a></li>
-											<li><a href="single-portfolio.html" class="icons fa fa-link"></a></li>
-										</ul>
-									</div>
-								<img src="http://placehold.it/640x480&text=2"/>
-								</div>
-							</div>
-						<div class="post">	
-							<p>Nam sed enim molestie</p>
-						</div>
-						</li>	
-						<!-- 3 -->
-						<li class="span4 from-bottom">
-							<div class="hoveritem">
-								<div class="link">
-									<div class="hovercontent">
-										<ul class="caption"> 
-											<li><a href="http://placehold.it/640x480&text=3" class="icons fa fa-search" rel="prettyPhoto" title="Project Name"></a></li>
-											<li><a href="single-portfolio.html" class="icons fa fa-link"></a></li>
-										</ul>
-									</div>
-								<img src="http://placehold.it/640x480&text=3"/>
-								</div>
-							</div>
-						<div class="post">	
-							<p>Nam sed enim molestie</p>
-						</div>
-						</li>	
-						<!-- 4 -->
-						<li class="span4 from-bottom">
-							<div class="hoveritem">
-								<div class="link">
-									<div class="hovercontent">
-										<ul class="caption"> 
-											<li><a href="http://placehold.it/640x480&text=4" class="icons fa fa-search" rel="prettyPhoto" title="Project Name"></a></li>
-											<li><a href="single-portfolio.html" class="icons fa fa-link"></a></li>
-										</ul>
-									</div>
-								<img src="http://placehold.it/640x480&text=4"/>
-								</div>
-							</div>
-						<div class="post">	
-							<p>Nam sed enim molestie</p>
-						</div>
-						</li>
-						<!-- 5 -->
-						<li class="span4 from-bottom">
-							<div class="hoveritem">
-								<div class="link">
-									<div class="hovercontent">
-										<ul class="caption"> 
-											<li><a href="http://placehold.it/640x480&text=5" class="icons fa fa-search" rel="prettyPhoto" title="Project Name"></a></li>
-											<li><a href="single-portfolio.html" class="icons fa fa-link"></a></li>
-										</ul>
-									</div>
-								<img src="http://placehold.it/640x480&text=5"/>
-								</div>
-							</div>
-						<div class="post">	
-							<p>Nam sed enim molestie</p>
-						</div>
-						</li>
-						<!-- 6 -->
-						<li class="span4 from-bottom">
-							<div class="hoveritem">
-								<div class="link">
-									<div class="hovercontent">
-										<ul class="caption"> 
-											<li><a href="http://placehold.it/640x480&text=6" class="icons fa fa-search" rel="prettyPhoto" title="Project Name"></a></li>
-											<li><a href="single-portfolio.html" class="icons fa fa-link"></a></li>
-										</ul>
-									</div>
-								<img src="http://placehold.it/640x480&text=6"/>
-								</div>
-							</div>
-						<div class="post">	
-							<p>Nam sed enim molestie</p>
-						</div>
-						</li>
-					</ul>
-				</div>
-				</li>
-				
-				<li>
-				<div class="row">
-					<ul class="work">
-						<!-- 1 -->
-						<li class="span4 from-bottom">
-							<div class="hoveritem">
-								<div class="link">
-									<div class="hovercontent">
-										<ul class="caption"> 
-											<li><a href="http://placehold.it/640x480&text=7" class="icons fa fa-search" rel="prettyPhoto" title="Project Name"></a></li>
-											<li><a href="single-portfolio.html" class="icons fa fa-link"></a></li>
-										</ul>
-									</div>
-								<img src="http://placehold.it/640x480&text=7"/>
-								</div>
-							</div>
-						<div class="post">	
-							<p>Nam sed enim molestie</p>
-						</div>
-						</li>
-						<!-- 2 -->
-						<li class="span4 from-bottom">
-							<div class="hoveritem">
-								<div class="link">
-									<div class="hovercontent">
-										<ul class="caption"> 
-											<li><a href="http://placehold.it/640x480&text=8" class="icons fa fa-search" rel="prettyPhoto" title="Project Name"></a></li>
-											<li><a href="single-portfolio.html" class="icons fa fa-link"></a></li>
-										</ul>
-									</div>
-								<img src="http://placehold.it/640x480&text=8"/>
-								</div>
-							</div>
-						<div class="post">	
-							<p>Nam sed enim molestie</p>
-						</div>
-						</li>	
-						<!-- 3 -->
-						<li class="span4 from-bottom">
-							<div class="hoveritem">
-								<div class="link">
-									<div class="hovercontent">
-										<ul class="caption"> 
-											<li><a href="http://placehold.it/640x480&text=9" class="icons fa fa-search" rel="prettyPhoto" title="Project Name"></a></li>
-											<li><a href="single-portfolio.html" class="icons fa fa-link"></a></li>
-										</ul>
-									</div>
-								<img src="http://placehold.it/640x480&text=9"/>
-								</div>
-							</div>
-						<div class="post">	
-							<p>Nam sed enim molestie</p>
-						</div>
-						</li>	
-						<!-- 4 -->
-						<li class="span4 from-bottom">
-							<div class="hoveritem">
-								<div class="link">
-									<div class="hovercontent">
-										<ul class="caption"> 
-											<li><a href="http://placehold.it/640x480&text=10" class="icons fa fa-search" rel="prettyPhoto" title="Project Name"></a></li>
-											<li><a href="single-portfolio.html" class="icons fa fa-link"></a></li>
-										</ul>
-									</div>
-								<img src="http://placehold.it/640x480&text=10"/>
-								</div>
-							</div>
-						<div class="post">	
-							<p>Nam sed enim molestie</p>
-						</div>
-						</li>
-						<!-- 5 -->
-						<li class="span4 from-bottom">
-							<div class="hoveritem">
-								<div class="link">
-									<div class="hovercontent">
-										<ul class="caption"> 
-											<li><a href="http://placehold.it/640x480&text=11" class="icons fa fa-search" rel="prettyPhoto" title="Project Name"></a></li>
-											<li><a href="single-portfolio.html" class="icons fa fa-link"></a></li>
-										</ul>
-									</div>
-								<img src="http://placehold.it/640x480&text=11"/>
-								</div>
-							</div>
-						<div class="post">	
-							<p>Nam sed enim molestie</p>
-						</div>
-						</li>
-						<!-- 6 -->
-						<li class="span4 from-bottom">
-							<div class="hoveritem">
-								<div class="link">
-									<div class="hovercontent">
-										<ul class="caption"> 
-											<li><a href="http://placehold.it/640x480&text=12" class="icons fa fa-search" rel="prettyPhoto" title="Project Name"></a></li>
-											<li><a href="single-portfolio.html" class="icons fa fa-link"></a></li>
-										</ul>
-									</div>
-								<img src="http://placehold.it/640x480&text=12"/>
-								</div>
-							</div>
-						<div class="post">	
-							<p>Nam sed enim molestie</p>
-						</div>
-						</li>
-					</ul>
-				</div>
-				</li>
-			</ul>
-		</div>
+	<div class="portfolio-holder">
+		<ul id="filter" class="inner-filters primary">
+			<li class="active"><a href="#" class="all">All</a></li>
+			<li><a href="#" >Apps</a></li>
+			<li><a href="#" >branding</a></li>
+			<li><a href="#">Web</a></li>
+			<li class="last"><a href="#">Print</a></li>
+		</ul>
+	<ul id="portfolio-items" class="filterable-grid holder">
+		<li class="print filterable-item fade-in">
+			<figure>
+				<img width="400" height="300" src="http://placehold.it/640x480&text=1" alt="Weatherette" />
+				<figcaption>
+					<a href="single-portfolio.html"><h3>The Project</h3></a>
+					—
+					<span>Lorem ipsum dolor sit amet</span>
+					<a class="look" href="ahttp://placehold.it/640x480&text=1" rel="prettyPhoto" title="Weatherette">take a look +</a>
+				</figcaption>
+			</figure>
+        </li>
+        <li class="apps filterable-item fade-in">
+			<figure>
+				<img width="400" height="300" src="http://placehold.it/640x480&text=2" alt="Weatherette" />
+				<figcaption>
+					<a href="single-portfolio.html"><h3>The Project</h3></a>
+					—
+					<span>Lorem ipsum dolor sit amet</span>
+					<a class="look" href="http://placehold.it/640x480&text=2" rel="prettyPhoto" title="Weatherette">take a look +</a>
+				</figcaption>
+			</figure>
+        </li>
+        <li class="web filterable-item fade-in">
+			<figure>
+				<img width="400" height="300" src="http://placehold.it/640x480&text=3" alt="Weatherette" />
+				<figcaption>
+					<a href="single-portfolio.html"><h3>The Project</h3></a>
+					—
+					<span>Lorem ipsum dolor sit amet</span>
+					<a class="look" href="http://placehold.it/640x480&text=3" rel="prettyPhoto" title="Weatherette">take a look +</a>
+				</figcaption>
+			</figure>
+        </li>
+        <li class="branding filterable-item fade-in">
+			<figure>
+				<img width="400" height="300" src="http://placehold.it/640x480&text=4" alt="Weatherette" />
+				<figcaption>
+					<a href="single-portfolio.html"><h3>The Project</h3></a>
+					—
+					<span>Lorem ipsum dolor sit amet</span>
+					<a class="look" href="http://placehold.it/640x480&text=4" rel="prettyPhoto" title="Weatherette">take a look +</a>
+				</figcaption>
+			</figure>
+        </li>
+        <li class="apps web filterable-item fade-in">
+			<figure>
+				<img width="400" height="300" src="http://placehold.it/640x480&text=5" alt="Weatherette" />
+				<figcaption>
+					<a href="single-portfolio.html"><h3>The Project</h3></a>
+					—
+					<span>Lorem ipsum dolor sit amet</span>
+					<a class="look" href="http://placehold.it/640x480&text=5" rel="prettyPhoto" title="Weatherette">take a look +</a>
+				</figcaption>
+			</figure>
+        </li>
+        <li class="print filterable-item fade-in">
+			<figure>
+				<img width="400" height="300" src="http://placehold.it/640x480&text=6" alt="Weatherette" />
+				<figcaption>
+					<a href="single-portfolio.html"><h3>The Project</h3></a>
+					—
+					<span>Lorem ipsum dolor sit amet</span>
+					<a class="look" href="http://placehold.it/640x480&text=6" rel="prettyPhoto" title="Weatherette">take a look +</a>
+				</figcaption>
+			</figure>
+        </li>
+        <li class="print filterable-item fade-in">
+			<figure>
+				<img width="400" height="300" src="http://placehold.it/640x480&text=7" alt="Weatherette" />
+				<figcaption>
+					<a href="single-portfolio.html"><h3>The Project</h3></a>
+					—
+					<span>Lorem ipsum dolor sit amet</span>
+					<a class="look" href="http://placehold.it/640x480&text=7" rel="prettyPhoto" title="Weatherette">take a look +</a>
+				</figcaption>
+			</figure>
+        </li>
+        <li class="branding filterable-item fade-in">
+			<figure>
+				<img width="400" height="300" src="http://placehold.it/640x480&text=8" alt="Weatherette" />
+				<figcaption>
+					<a href="single-portfolio.html"><h3>The Project</h3></a>
+					—
+					<span>Lorem ipsum dolor sit amet</span>
+					<a class="look" href="http://placehold.it/640x480&text=8" rel="prettyPhoto" title="Weatherette">take a look +</a>
+				</figcaption>
+			</figure>
+        </li>
+    </ul>
+    </div>
 	</div>
 </section>
 
 <section id="testimonial">
 	<div class="container">
-		<div class="title from-bottom">
-			<h2>Testimonial & Clients</h2>
+		<div class="title from-top">
+			<h2>Awesome Features</h2>
 			<div class="bullerBr"> 
 				<span>&nbsp;</span> 
 				<i class="fa fa-circle"></i>
@@ -447,56 +419,28 @@
 			<p class="descrip">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce elementum, nulla vel pellentesque consequat, ante nulla hendrerit arcu, ac tincidunt mauris lacus sed leo. vamus suscipit molestie vestibulum.</p>
 		</div>
 	<div class="row-fluid">	
-		<div class="span6 from-bottom">
-			<div class="testimonial">
-				<ul class="slides">
-				<li>
-					<div class="testimonials">
-						<div class="span4 text-center">
-							<img class="img-circle" src="http://placehold.it/480x480&text=Client+1"/>
-						</div>
-						<div class="span8">
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce elementum, nulla vel pellentesque consequat, ante nulla hendrerit arcu, ac tincidunt mauris lacus sed leo. vamus suscipit molestie vestibulum.</p>
-							<p class="color-2 text-right"><strong>Zane Camle</strong> / Marketing Arseit</p>
-						</div>
-					</div>
-				</li>
-				
-				<li>
-					<div class="testimonials">
-						<div class="span4 text-center">
-							<img class="img-circle" src="http://placehold.it/480x480&text=Client+2"/>
-						</div>
-						<div class="span8">
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce elementum, nulla vel pellentesque consequat, ante nulla hendrerit arcu, ac tincidunt mauris lacus sed leo. vamus suscipit molestie vestibulum.</p>
-							<p class="color-2 text-right"><strong>Umar Hamzah</strong> / CEO Arseit</p>
-						</div>
-					</div>
-				</li>
-				
-				</ul>
-			</div>
+		<div class="span6 fade-in">
+			<img src="assets/img/layout.png">
 		</div>
 		
-		<div class="span6 from-bottom">
-			<ul class="logos">
-			  <li><a href="#"><img alt="Logo 1" src="assets/img/client/logo-1.png"></a></li>
-			  <li><a href="#"><img alt="Logo 2" src="assets/img/client/logo-2.png"></a></li>
-			  <li><a href="#"><img alt="Logo 3" src="assets/img/client/logo-3.png"></a></li>
-			  <li><a href="#"><img src="assets/img/client/logo-1.png" alt="Logo 4"></a></li>
-			  <li><a href="#"><img alt="Logo 1" src="assets/img/client/logo-1.png"></a></li>
-			  <li><a href="#"><img alt="Logo 2" src="assets/img/client/logo-2.png"></a></li>
-			  <li><a href="#"><img alt="Logo 3" src="assets/img/client/logo-3.png"></a></li>
-			  <li><a href="#"><img src="assets/img/client/logo-1.png" alt="Logo 4"></a></li>
+		<div class="span6">
+			<ul class="view">
+				<li class="left from-bottom"><i class="fa fa-coffee fa-3x"></i></li>
+				<li class="right from-bottom"><h4>4 Diffrent Layouts Check all Demos</h4> Necessary making this the first true generator on the Internet.</li>
+				<li class="left from-bottom"><i class="fa fa-leaf fa-3x"></i></li>
+				<li class="right from-bottom"><h4>Smart and Flexible Styled Templates</h4> Necessary making this the first true generator on the Internet.</li>
+				<li class="left from-bottom"><i class="fa fa-cog fa-3x"></i></li>
+				<li class="right from-bottom"><h4>Well Structured &amp; Cross Browsered</h4> Necessary making this the first true generator on the Internet.</li>
 			</ul>
 		</div>
 	</div>
 	</div>
 </section>
-<section id="services">
+
+<section id="content">
 	<div class="container">
-		<div class="title from-bottom">
-			<h2>Services + Tabs & Skills</h2>
+		<div class="title from-top">
+			<h2>Our Prices</h2>
 			<div class="bullerBr"> 
 				<span>&nbsp;</span> 
 				<i class="fa fa-circle"></i>
@@ -505,72 +449,79 @@
 			<p class="descrip">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce elementum, nulla vel pellentesque consequat, ante nulla hendrerit arcu, ac tincidunt mauris lacus sed leo. vamus suscipit molestie vestibulum.</p>
 		</div>
 	<div class="row-fluid">
-		<div class="span4 from-bottom">
-			<h3>Our Spacialization</h3>
-			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce elementum, nulla vel pellentesque consequat, ante nulla hendrerit arcu.</p>
-				<div class="progress">
-					<div class="bar" style="width: 90%;">
-						Html/Css
-					</div>
-				</div>
-				<div class="progress">
-					<div class="bar" style="width: 70%;">
-						Javascript
-					</div>
-				</div>
-				<div class="progress">
-					<div class="bar" style="width: 100%;">
-						WordPress
-					</div>
-				</div>
-				<div class="progress">
-					<div class="bar" style="width: 65%;">
-						Photoshop
-					</div>
-				</div>
-		</div>
-		<div class="span4 from-bottom">
-			<h3 class="spec">What We Do ?</h3>
-				<div class="tabbable">
-                
-                <ul class="nav nav-tabs" id="myTab">
-					<li class="active"><a href="#tab1" data-toggle="tab">Web Design</a></li>
-                    <li><a href="#tab2" data-toggle="tab">Photography</a></li>
-                    <li><a href="#tab3" data-toggle="tab">Consulting</a></li>
-                </ul>
-                 
-                <div class="tab-content">
-					<div class="tab-pane fade in active" id="tab1">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas neque diam, luctus at laoreet in, auctor ut tellus. Etiam enim lacus, ornare et tempor, rhoncus rhoncus sem. Aliquam volutpat arcu et nibh mollis eleifend pharetra lorem scelerisque. Donec vel enim purus, id viverra neque. Cras in velit ante, eget pellentesque sem. Duis tincidunt erat quam. Etiam placerat sapien elit.</p>   
-                    </div>
-                    <div class="tab-pane fade in" id="tab2">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas neque diam, luctus at laoreet in, auctor ut tellus. Etiam enim lacus, ornare et tempor, rhoncus rhoncus sem. Aliquam volutpat arcu et nibh mollis eleifend pharetra lorem scelerisque. Donec vel enim purus, id viverra neque. Cras in velit ante, eget pellentesque sem. Duis tincidunt erat quam. Etiam placerat sapien elit.</p>
-                    </div>
-                    <div class="tab-pane fade in" id="tab3">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas neque diam, luctus at laoreet in, auctor ut tellus. Etiam enim lacus, ornare et tempor, rhoncus rhoncus sem. Aliquam volutpat arcu et nibh mollis eleifend pharetra lorem scelerisque. Donec vel enim purus, id viverra neque. Cras in velit ante, eget pellentesque sem. Duis tincidunt erat quam. Etiam placerat sapien elit.</p>  
-                    </div>
-                 </div>       
-				</div>
-		</div>
-		<div class="span4 from-bottom">
-		<h3>Who Choose Us ?</h3>
-			<div id="f-accordion">
-				<p class="accordions">Start Support</p>
-				<div>
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce elementum, nulla vel pellentesque consequat, ante nulla hendrerit arcu.</p>
-				</div>
+		<div class="plan span3 fade-in">
+			<h3>Standard</h3>
+			<div class="plan-price">
+				<span class="plan-currency">$</span>
+				<span class="value">19,90</span>
+				<span class="period">/ per month</span>
 				
-				<p class="accordions">Great Page Builder</p>
-				<div>
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce elementum, nulla vel pellentesque consequat, ante nulla hendrerit arcu.</p>
-				</div>
-				
-				<p class="accordions">Awersone Design Layout</p>
-				<div>
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce elementum, nulla vel pellentesque consequat, ante nulla hendrerit arcu.</p>
-				</div>
+			</div>
+			<div class="plan-features">
+				<ul>
+					<li>5GB Disk Space</li>
+					<li>10 Email Accounts</li>
+					<li>5GB Monthly Bandwidth</li>
+					<li>Unlimited Subdomains</li>
+				</ul>
+				<a class="button light" href="#">Sign Up</a>
 			</div>
 		</div>
+				
+		<div class="featured plan span3 fade-in">
+			<h3>Premium</h3>
+			<div class="plan-price">
+				<span class="plan-currency">$</span>
+				<span class="value">29,90</span>
+				<span class="period">/ per month</span>
+			</div>
+			<div class="plan-features">
+				<ul>
+					<li>10GB Disk Space</li>
+					<li>15 Email Accounts</li>
+					<li>10GB Monthly Bandwidth</li>
+					<li>Unlimited Subdomains</li>
+				</ul>
+				<a class="button light" href="#">Sign Up</a>
+			</div>
+		</div>
+				
+		<div class="premium plan span3 from-bottom">
+			<h3>Ultimate</h3>
+			<div class="plan-price">
+				<span class="plan-currency">$</span>
+				<span class="value">39,90</span>
+				<span class="period">/ per month</span>
+			</div>
+			<div class="plan-features">
+				<ul>
+					<li>15GB Disk Space</li>
+					<li>15 Email Accounts</li>
+					<li>15GB Monthly Bandwidth</li>
+					<li>Unlimited Subdomains</li>
+				</ul>
+				<a class="button color" href="#">Sign Up</a>
+			</div>
+		</div>
+		
+		<div class="featured plan span3 fade-in">
+			<h3>Ultra</h3>
+			<div class="plan-price">
+				<span class="plan-currency">$</span>
+				<span class="value">49,90</span>
+				<span class="period">/ per month</span>
+			</div>
+			<div class="plan-features">
+				<ul>
+					<li>35GB Disk Space</li>
+					<li>25 Email Accounts</li>
+					<li>35GB Monthly Bandwidth</li>
+					<li>Unlimited Subdomains</li>
+				</ul>
+				<a class="button light" href="#">Sign Up</a>
+			</div>
+		</div>
+	</div>
 	</div>
 </section>
 	<div class="about fade-in">
@@ -588,8 +539,7 @@
 			</div>
 			</li>
 		</ul>
-	</div>
-	
+	</div>	
 	<div class="footer fade-in">
 		<!-- ==================== Footer Top ==================== -->
 		<div class="container">   
@@ -644,6 +594,7 @@
 				</div>
 			</div>
 		</div>
+	
 	<div class="subfooter fade-in">
 		<div class="container">
 			<div class="row">
@@ -666,7 +617,6 @@
 		</div>
 	</div>
 	</div>
-
 <footer>
 <script type="text/javascript" src="assets/js/jquery-1.10.1.min.js"></script>
 <script type="text/javascript" src="assets/js/jquery-migrate-1.2.1.min.js"></script>
@@ -684,6 +634,8 @@
 <script type="text/javascript" src="assets/js/camera/camera.js"></script>
 <!-- Flexslider -->
 <script type="text/javascript" src="assets/js/flexslider/jquery.flexslider.js"></script>
+<!-- filterable -->
+<script type="text/javascript" src="assets/js/filterable/jquery.quicksand.js"></script>
 <!-- Navbar -->
 <script type="text/javascript" src="assets/js/navbar/classie.js"></script>
 <script type="text/javascript" src="assets/js/navbar/cbpAnimatedHeader.js"></script>
